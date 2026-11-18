@@ -30,11 +30,7 @@ sudo apt update
 sudo apt install -y git clang llvm make g++ libbpf-dev linux-tools-common linux-tools-$(uname -r) libelf-dev zlib1g-dev docker.io
 sudo systemctl enable --now docker
 
-Клонирование и сборка (make сам сгенерирует vmlinux.h и соберёт eBPF-скелетон):
-
-git clone https://github.com/<ТВОЙ_ЛОГИН>/<ТВОЙ_РЕПОЗИТОРИЙ>.git
-cd <ТВОЙ_РЕПОЗИТОРИЙ>
-make
+Клонирование и сборка (make сам сгенерирует vmlinux.h и соберёт eBPF-скелет)
 
 Использование
 
